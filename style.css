@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #212529;
+    border: none;
+}
+body{
+    background: #eff1f4;
+}
+/* ==== logo design css==== */
+.container-fluid.shadow-sm {
+    padding: 8px 0;
+}
+.logo{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 45px;
+}
+.logo img {
+    flex-basis: 14%;
+    margin: 0;
+}
+
+.logo .search {
+    flex-basis: 79%;
+    margin: -14px;
+}
+.logo .search i {
+    position: relative;
+    z-index: 99;
+    left: 33px;
+}
+.logo .search input {
+    outline: none;
+    border: 1px solid #f0f2f5;
+    position: relative;
+    padding: 5px 10px 5px 36px;
+    border-radius: 25px;
+    background: #f0f2f5;
+}
+/* =====menu design csss===== */
+.menu ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    height: 45px;
+    margin-bottom: 0;
+    position: relative;
+}
+.icon_text {
+    padding: 6px 28px;
+    transition: .3s all ease-in-out;
+}
+.icon_text:hover {
+    background: #dddddd85;
+    padding: 6px 28px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.timeline_user button:hover {
+    background: #ddd;
+   
+}
+.menu ul li{
+
+}
+/* .menu ul li::after {
+    left: -29px;
+    content: '';
+    width: 316%;
+    height: 6px;
+    background: red;
+    color: yellow;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    display: inline-block;
+} */
+.menu ul li a{
+   color: #212529;
+}
+.menu ul li::after {
+    content: '';
+    width: 96px;
+    background: #0675e8;
+    height: 5px;
+    line-height: 10px;
+    position: absolute;
+    top: 48px;
+    left: 57px;
+}
+.menu ul li:nth-child(1) a svg{
+    color: #0675e8;
+}
+.menu ul li a svg{
+    
+}
+
+/* user personal info */
+.user_per_info{
+
+}
+.user_per_info ul {
+    height: 45px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.user_per_info ul li{}
+.user_per_info ul li a{
+    border-radius: 50% !important;
+    overflow: hidden;
+    display: inline-block;
+}
+.user_per_info ul li a svg {
+    height: 45px;
+    padding: 12px;
+    color: #212529;
+    background: #ddd;
+    width: 45px;
+}
+/*  =====banner section==== */
+.left_sidebar ul {
+    margin: 0;
+    padding-left: 0;
+}
+.left_sidebar img {
+    margin-right: 15px;
+}
+.left_sidebar a {
+    font-size: 16px;
+    font-weight: 500;
+}
+.left_sidebar li {
+    border-radius: 10px;
+    margin: 1px 0;
+    padding: 6px 12px;
+}
+.left_sidebar li:hover{
+    background-color: #e4e6e9;
+    border-radius: 10px;
+}
+
+/* story csss */
+.story {
+    border-radius: 10px;
+    height: 238px;
+    background-image: url(./img/fa36-removebg-preview\ \(3\).png);
+    width: 18%;
+    background-size: 100%;
+    object-fit: cover;
+    transition: .3s all ease-in-out;
+    box-shadow: 0px 0px 2px;
+}
+.story:nth-child(2){
+    background-image: url(./img/s2.jpg);
+}
+.story:nth-child(3){
+    background-image: url(./img/s3.jpg);
+}
+.story:nth-child(4){
+    background-image: url(./img/s4.jpg);
+}
+.story:nth-child(5){
+    background-image: url(./img/s5.jpg);
+}
+.story_img {
+    position: relative;
+    top: 8%;
+    left: 11%;
+    bottom: 0;
+    right: 0;
+}
+.story:hover{
+    background-size: 105%;
+}
+.story_img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1b74e4;
+}
+
+.story_text {
+    position: relative;
+    bottom: -159px;
+    left: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+/* admin user story */
+.user_story{
+    position: relative;
+}
+.user_story .story_text {
+    position: absolute;
+    background: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 34px;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: content-box;
+    border-radius: 0 0 10px 10px;
+    color: #000;
+}
+.story_text span {
+    display: block;
+}
+.user_story .story_text span {
+    display: block;
+    top: -36px;
+    position: relative;
+    font-size: 15px;
+}
+.story_text i {
+    position: relative;
+    top: -32px;
+    background: #1876f2;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 9px 10px;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+/* time line */
+.modal_timeline {
+    width: 97%;
+    padding: 10px 0;
+}
+.timeline_user{
+}
+.timeline_user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.timeline_user button{
+    width: 90%;
+    border: none;
+}
+.rounded-pill {
+    border-radius: 50rem!important;
+    padding: 8px 25px;
+    text-align: left;
+    font-size: 18px;
+}
+.card {
+    border-radius: 10px !important;
+}
+.icon_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_text svg {
+    margin-right: 9px;
+    font-size: 26px;
+}
+.icon_text span{
+    font-weight: bold;
+}
+.icon_text:nth-child(1) svg {
+    color: #f3425f;
+   
+}
+.icon_text:nth-child(2) svg{
+    color: #45bd62;
+}
+.icon_text:nth-child(3) svg{
+    color: #f7b928;
+}
+/* post style */
+.post_header {
+    justify-content: space-between;
+    align-items: center;
+}
+.autorinfo {
+    margin-left: 28px;
+}
+.edite_delete_post {
+    margin-right: 20px;
+}
+.post_area {
+    margin: 20px;
+}
+.edite_delete_post i {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background: rgba(221, 221, 221, 0);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 2px;
+    box-sizing: content-box;
+    transition: .3s;
+}
+.edite_delete_post i:hover{
+    background: rgba(221, 221, 221, 1);
+}
+button#dropdownMenuButton1 {
+    background: #fff;
+    border: 0;
+    color: #000;
+    
+}
+button#dropdownMenuButton1:hover {
+    background: #fff;
+    border: 0;
+    color: #000;
+}
+button#dropdownMenuButton1:focus{
+    outline: none !important;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.modal-header , modal-body,modal-footer {
+    margin: 4px;
+}
+.modal-body{
+    margin: 4px;
+}
+.modal-footer{
+    margin: 4px;
+}
+.autorinfo {
+    margin-left: 5px;
+}
+.edite_delete_post {
+    margin-right: -11px;
+}
