@@ -39,3 +39,5 @@ const updateLsdata = (key, array) => {
     localStorage.setItem(key, JSON.stringify(array));
 }
 
+
+

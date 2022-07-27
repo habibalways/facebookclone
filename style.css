@@ -12,6 +12,7 @@ a{
 }
 body{
     background: #eff1f4;
+    overflow-x: hidden;
 }
 /* ==== logo design css==== */
 .container-fluid.shadow-sm {
