@@ -103,23 +103,23 @@ all_post.onclick = (e) => {
     
      // edite data
     
-    let edite_data = all_post.findIndex(data => data.id == post_id);
+    let { aname, aphoto, id, pcontent, pphoto } = all_post.find(data => data.id == post_id);
 
     
 
-    let { aname, aphoto, id, pcontent, pphoto } = all_post[edite_data];
+console.log(aname);
     
     // let { aname, aphoto, id, pcontent, pphoto } = all_post.find(data => data.id == post_id);
   
     Post_edite_form.innerHTML = `
               <div class="my-3">
               <label for="">Author name</label>
-              <input name="aname" type="text" value=${aname} class="form-control">
-              <input name="id" type="hidden" value=${id} class="form-control">
+              <input name="aname" type="text" value="${aname}" class="form-control">
+              <input name="id" type="hidden" value="${id}" class="form-control">
           </div>
           <div class="my-3">
               <label for="">Author photo</label>
-              <input name="aphoto" type="text" value=${aphoto} class="form-control">
+              <input name="aphoto" type="text" value="${aphoto}" class="form-control">
           </div>
           <div class="my-3">
               <label for="">Post Content</label>
@@ -128,7 +128,7 @@ all_post.onclick = (e) => {
           
           <div class="my-3">
               <label for=""> Post Photo</label>
-              <input name="pphoto" type="text" value=${pphoto} class="form-control">
+              <input name="pphoto" type="text" value="${pphoto}" class="form-control">
           </div>
           <div class="my-3">
               <input type="submit" class="w-100 btn-primary btn" value="Update Post">
@@ -157,11 +157,11 @@ Post_edite_form.onsubmit = (e) => {
   
   let all_data = readLSData('fb_post');
 
-  let indexid = all_data.findIndex(data => data.id = id);
+  let indexid = all_data.findIndex(data => data.id == id);
   console.log(id);
   all_data[indexid] = { aname, aphoto, id, pcontent, pphoto };
 
-  // updateLsdata('fb_post', all_data);
+  updateLsdata('fb_post', all_data);
   getAllPost();
 
   console.log(all_data);
